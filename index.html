@@ -5,27 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- google Manrope font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
     <!-- daisyUi link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- tailwind css custom code  -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
+
+    <style>
+        .manrope {
+            font-family: "Manrope", sans-serif;
         }
-    </script>
+    </style>
 
 </head>
 
 <body>
-    <h1>hello</h1>
+    <!-- header section start -->
+    <header>
+        <nav></nav>
+        <div class="max-w-[1170px] w-[85%] mx-auto relative">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 bottom-1 gap-5">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-center  transform -translate-y-1/2 left-5 right-5 bottom-1 gap-5">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-center  transform -translate-y-1/2 left-5 right-5 bottom-1 gap-5">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-center  transform -translate-y-1/2 left-5 right-5 bottom-1 gap-5">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4 lg:w-4/12 lg:bottom-3 lg:right-3 lg:absolute rounded-xl bg-[#131313]">
+                <h3 class="manrope text-lg font-extrabold text-white">
+                    Meet all the heroes from the field
+                </h3>
+                <p class="manrope text-sm font-medium leading-6 text-slate-500 mt-1">
+                    In the vast field of heroes, a diverse assembly of extraordinary individuals emerges, each wielding
+                    unique talents.
+                </p>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- main body start -->
+    <main class="max-w-[1170px] w-[85%] mx-auto">
+        <!-- hockeys start -->
+        <section class="my-16">
+            <div>
+                <h3>
+                    Professional Hockeys Club
+                </h3>
+                <p>
+                    In the vast field of heroes, a diverse assembly of extraordinary individuals emerges, each wielding
+                    unique talents.
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
