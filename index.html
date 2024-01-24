@@ -33,10 +33,61 @@
 
 </head>
 
-<body>
+<body class="manrope">
     <!-- header section start -->
     <header>
-        <nav></nav>
+        <nav class="max-w-[1170px] w-[90%] mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>About</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">Hockey<span class="text-error -mr-1 -ml-1">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-[#FF4240]">Home</a></li>
+                        <li>
+                            <details>
+                                <summary>About</summary>
+                                <ul class="p-1 z-10">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass w-10 hidden md:block cursor-pointer"></i>
+                    <a class="btn btn-error text-[#fff]">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+
         <div class="max-w-[1170px] w-[90%] mx-auto relative">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
@@ -98,8 +149,8 @@
 
             <div class="mt-6 gap-4 grid md:grid-cols-2 lg:grid-cols-4">
                 <div class="text-center mt-6">
-                    <div class="radial-progress text-error" style="--value:87;" role="progressbar">
-                        87%
+                    <div class="radial-progress text-error rotate-180" style="--value:87;" role="progressbar">
+                        <span class="rotate-180 text-black font-extrabold">87%</span>
                     </div>
                     <h4 class="my-5 text-[#131313] text-xl font-semibold">
                         Prayer Facility
@@ -108,9 +159,10 @@
                         assembly of extraordinary individuals <br> each emerges.
                     </p>
                 </div>
+
                 <div class="text-center mt-6">
-                    <div class="radial-progress text-success" style="--value:95;" role="progressbar">
-                        95%
+                    <div class="radial-progress text-success rotate-90" style="--value:95;" role="progressbar">
+                        <span class="-rotate-90 text-black font-extrabold">95%</span>
                     </div>
                     <h4 class="my-5 text-[#131313] text-xl font-semibold">
                         Prayer Facility
@@ -119,9 +171,10 @@
                         assembly of extraordinary individuals <br> each emerges.
                     </p>
                 </div>
+
                 <div class="text-center mt-6">
-                    <div class="radial-progress text-warning" style="--value:90;" role="progressbar">
-                        90%
+                    <div class="radial-progress text-warning rotate-90" style="--value:90;" role="progressbar">
+                        <span class="-rotate-90 text-black font-extrabold">90%</span>
                     </div>
                     <h4 class="my-5 text-[#131313] text-xl font-semibold">
                         Prayer Facility
@@ -130,9 +183,10 @@
                         assembly of extraordinary individuals <br> each emerges.
                     </p>
                 </div>
+
                 <div class="text-center mt-6">
-                    <div class="radial-progress text-info" style="--value:80;" role="progressbar">
-                        80%
+                    <div class="radial-progress text-info rotate-180" style="--value:80;" role="progressbar">
+                        <span class="rotate-180 text-black font-extrabold">80%</span>
                     </div>
                     <h4 class="my-5 text-[#131313] text-xl font-semibold">
                         Prayer Facility
@@ -254,7 +308,7 @@
                         <p class="text-gray-800 text-opacity-50 font-medium my-1">
                             In the vast field of heroes a diverse of extraordinary.
                         </p>
-                        <div class="lg:flex gap-1">
+                        <div class="lg:flex lg:justify-between">
                             <h4 class="text-[#FF4240] text-lg font-extrabold lg:text-base lg:font-medium mb-1">
                                 Price - $22.00
                             </h4>
@@ -316,7 +370,7 @@
                         <p class="text-gray-800 text-opacity-50 font-medium my-1">
                             In the vast field of heroes a diverse of extraordinary.
                         </p>
-                        <div class="lg:flex gap-1">
+                        <div class="lg:flex lg:justify-between">
                             <h4 class="text-[#FF4240] text-lg font-extrabold lg:text-base lg:font-medium mb-1">
                                 Price - $22.00
                             </h4>
@@ -378,7 +432,7 @@
                         <p class="text-gray-800 text-opacity-50 font-medium my-1">
                             In the vast field of heroes a diverse of extraordinary.
                         </p>
-                        <div class="lg:flex gap-1">
+                        <div class="lg:flex lg:justify-between">
                             <h4 class="text-[#FF4240] text-lg font-extrabold lg:text-base lg:font-medium mb-1">
                                 Price - $22.00
                             </h4>
@@ -440,7 +494,7 @@
                         <p class="text-gray-800 text-opacity-50 font-medium my-1">
                             In the vast field of heroes a diverse of extraordinary.
                         </p>
-                        <div class="lg:flex gap-1">
+                        <div class="lg:flex lg:justify-between">
                             <h4 class="text-[#FF4240] text-lg font-extrabold lg:text-base lg:font-medium mb-1">
                                 Price - $22.00
                             </h4>
@@ -502,7 +556,7 @@
                         <p class="text-gray-800 text-opacity-50 font-medium my-1">
                             In the vast field of heroes a diverse of extraordinary.
                         </p>
-                        <div class="lg:flex gap-1">
+                        <div class="lg:flex lg:justify-between">
                             <h4 class="text-[#FF4240] text-lg font-extrabold lg:text-base lg:font-medium mb-1">
                                 Price - $22.00
                             </h4>
@@ -564,7 +618,7 @@
                         <p class="text-gray-800 text-opacity-50 font-medium my-1">
                             In the vast field of heroes a diverse of extraordinary.
                         </p>
-                        <div class="lg:flex gap-1">
+                        <div class="lg:flex lg:justify-between">
                             <h4 class="text-[#FF4240] text-lg font-extrabold lg:text-base lg:font-medium mb-1">
                                 Price - $22.00
                             </h4>
@@ -767,6 +821,50 @@
             </div>
         </section>
     </main>
+
+    <footer class="py-10 bg-neutral text-neutral-content">
+        <div class="max-w-[1170px] w-[85%] mx-auto footer grid grid-cols-2 md:grid-cols-4 justify-items-center">
+            <aside class="col-span-2 md:col-auto text-center ">
+                <h3 class="mx-auto text-lg text-[#fff] font-bold">Get In Touch</h3>
+                <p>
+                    In the vast field of heroes, a diverse assembly of extraordinary individuals emerges, each wielding.
+                </p>
+                <p class="mx-auto flex gap-2">
+                    <span class="text-[#FF4240]">
+                        <i class="fa-regular fa-envelope"></i>
+                    </span>hockeys@support.com
+                </p>
+                <p class="mx-auto flex gap-2">
+                    <span class="text-[#FF4240]">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>(+62) 123-321-543
+                </p>
+
+            </aside>
+            <nav class="text-center">
+                <header class="mx-auto text-lg text-[#fff] font-bold">Company</header>
+                <a class="link link-hover mx-auto">Branding</a>
+                <a class="link link-hover mx-auto">Design</a>
+                <a class="link link-hover mx-auto">Marketing</a>
+                <a class="link link-hover mx-auto">Advertisement</a>
+            </nav>
+            <nav class="text-center">
+                <header class="mx-auto text-lg text-[#fff] font-bold">Support</header>
+                <a class="link link-hover mx-auto">About us</a>
+                <a class="link link-hover mx-auto">Contact</a>
+                <a class="link link-hover mx-auto">Jobs</a>
+                <a class="link link-hover mx-auto">Press kit</a>
+            </nav>
+            <nav class="col-span-2">
+                <header class="mx-auto text-lg text-[#fff] font-bold">Services</header>
+                <a class="link link-hover mx-auto">Academy</a>
+                <a class="link link-hover mx-auto">Group Lesson</a>
+                <a class="link link-hover mx-auto">Private Lesson</a>
+                <a class="link link-hover mx-auto">Hockeys for kids</a>
+                <a class="link link-hover mx-auto">Hockeys for Adult</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 
 </html>
